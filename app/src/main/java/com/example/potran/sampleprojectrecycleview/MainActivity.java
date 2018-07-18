@@ -24,9 +24,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference ref = database.getReference("message");
+        DatabaseReference ref = database.getReference("messagesRR");
 
-        tv = (TextView)findViewById(R.id.textView);
+//        tv = (TextView)findViewById(R.id.textView);
 
         ref.setValue("What's up homie");
 
