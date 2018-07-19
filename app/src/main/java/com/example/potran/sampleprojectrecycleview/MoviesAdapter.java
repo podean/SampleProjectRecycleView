@@ -18,9 +18,9 @@ public class MoviesAdapter extends RecyclerView.Adapter<MoviesAdapter.MyViewHold
 
         public MyViewHolder(View view){
             super(view);
-            title = (TextView) view.findViewById(R.id.title);
-            year = (TextView)view.findViewById(R.id.year);
-            genre = (TextView) view.findViewById(R.id.genre);
+            title = view.findViewById(R.id.title);
+            year = view.findViewById(R.id.year);
+            genre = view.findViewById(R.id.genre);
         }
 
     }
@@ -29,6 +29,7 @@ public class MoviesAdapter extends RecyclerView.Adapter<MoviesAdapter.MyViewHold
         this.moviesList = moviesList;
     }
 
+    @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View itemView = LayoutInflater.from(parent.getContext())

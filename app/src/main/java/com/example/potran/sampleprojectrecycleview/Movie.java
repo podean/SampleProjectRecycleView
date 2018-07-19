@@ -36,4 +36,12 @@ public class Movie {
         this.genre = genre;
     }
 
+    @Override
+    public String toString() {
+        return "Movie{" +
+                "title='" + title + '\'' +
+                ", genre='" + genre + '\'' +
+                ", year='" + year + '\'' +
+                '}';
+    }
 }
