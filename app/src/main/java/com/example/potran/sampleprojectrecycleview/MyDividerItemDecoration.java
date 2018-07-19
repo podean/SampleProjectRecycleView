@@ -96,4 +96,5 @@ public class MyDividerItemDecoration extends RecyclerView.ItemDecoration {
         Resources r = context.getResources();
         return Math.round(TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, dp, r.getDisplayMetrics()));
     }
+
 }

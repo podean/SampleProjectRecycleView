@@ -37,8 +37,8 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this, value, Toast.LENGTH_SHORT).show();
                 Log.d("Firebase value: ", value);
                 tv.setText(value);
-
             }
+
 
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
